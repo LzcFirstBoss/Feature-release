@@ -1,1 +1,29 @@
+name: " Relatar um bug"
+description: "Reporte um problema encontrado no sistema"
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: input
+    id: resumo
+    attributes:
+      label: Resumo do problema
+      description: Descreva rapidamente o que está errado
+      placeholder: "Ex: O botão de login não responde"
+    validations:
+      required: true
 
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      description: Liste o que deve ser feito para reproduzir o erro
+      placeholder: "1. Acesse a tela X\n2. Clique em Y\n3. Observe Z"
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Comportamento esperado
+      description: O que deveria acontecer?
+      placeholder: "O botão deveria abrir o painel principal"
